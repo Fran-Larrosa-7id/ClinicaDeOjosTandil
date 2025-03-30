@@ -253,7 +253,7 @@ h6,
 
 
 .hero-text h1 {
-  font-size: clamp(2rem, 6vw, 4.5rem);
+  font-size: clamp(2rem, 6vw, 3rem);
   line-height: 1.2;
 }
 
@@ -294,6 +294,7 @@ main {
 .info {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 
@@ -322,3 +323,140 @@ section ul li {
   margin-bottom: 0.5rem;
 }
 
+.nav-toggle {
+  display: none;
+}
+
+.nav-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 0.5rem;
+  position: absolute;
+  right: 0;
+  padding-right: 2rem;
+}
+
+.nav-icon span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navegacion nav {
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+@media (max-width: 460px) {
+  .navegacion nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #009E9B;
+    padding: 0;
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .nav-toggle:checked + .nav-icon + .navegacion nav {
+    padding: 1rem;
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  .nav-icon {
+    display: flex;
+  }
+
+  .logo{
+    display: none;
+  }
+  .topbar{
+    min-height: 8vh;
+  }
+}
+
+
+.nosotros-section {
+  padding: 4rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.nosotros-section h2 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #009E9B;
+}
+
+.nosotros-section .divider {
+  width: 60px;
+  height: 4px;
+  background-color: #00B89F;
+  margin: 0 auto 2rem auto;
+  border-radius: 2px;
+}
+
+.nosotros-section p {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.section-card {
+  padding: 4rem 1.5rem;
+  max-width: 900px;
+  margin: 3rem auto;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.section-card h2 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #009E9B;
+}
+
+.section-card .divider {
+  width: 60px;
+  height: 4px;
+  background-color: #00B89F;
+  margin: 0 auto 2rem auto;
+  border-radius: 2px;
+}
+
+.section-card p {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
