@@ -82,19 +82,7 @@ h2 {
   font-size: 1.2rem;
 }
 
-.hero-text a {
-  background-color: #00B89F;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 25px;
-  text-decoration: none;
-  margin-right: 1rem;
-  display: inline-block;
-}
 
-.hero-text a:last-child {
-  background-color: #007BFF;
-}
 
 .form-section {
   background-color: #009E9B;
@@ -283,23 +271,14 @@ h6,
 
 .hero-text a {
   font-size: clamp(0.9rem, 1.8vw, 1.1rem);
-  background-color: #00B89F;
   color: white;
-  padding: clamp(0.6rem, 1.2vw, 0.75rem) clamp(1.2rem, 3vw, 1.5rem);
   border-radius: clamp(20px, 3vw, 25px);
   text-decoration: none;
   margin-right: 1rem;
   display: inline-block;
 }
 
-.hero-text a:last-child {
-  background-color: #007BFF;
-}
 
-.hero-text a:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  border: 2px solid white;
-}
 
 .hero-text a {
   transition: all 0.1s ease;
@@ -399,6 +378,11 @@ section ul li {
   .topbar {
     min-height: 8vh;
   }
+
+  .navegacion{
+    width: 10rem;
+    margin: 0 auto;
+  }
 }
 
 
@@ -441,7 +425,7 @@ section ul li {
   font-size: clamp(1rem, 2.2vw, 1.2rem);
   line-height: 1.6;
   margin-bottom: 1.2rem;
-  text-align: justify;
+  text-align: left;
 }
 
 @keyframes fadeIn {
@@ -491,6 +475,82 @@ section ul li {
 @media (min-width: 1700px){
   .nosotros{
     max-width: 40rem;
+  }
+}
+
+.button {
+  font-size: clamp(0.5rem, 1.8vw, 0.9rem);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding: clamp(0.2rem, 1.2vw, 0.75rem) clamp(1rem, 3vw, 1.5rem);
+  border-radius: clamp(20px, 3vw, 25px);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button:hover .icon {
+  transform: translate(4px);
+}
+
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+.buttons{
+  a>button{
+    background-color: #009E9B;
   }
 }
 
