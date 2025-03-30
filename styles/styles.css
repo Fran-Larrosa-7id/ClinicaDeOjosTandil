@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 
-h2{
+h2 {
   color: #009E9B;
 }
 
@@ -220,8 +220,25 @@ h6,
   position: relative;
   height: clamp(300px, 50vh, 700px);
   overflow: hidden;
-  background-color: #111;
+  background-image: url(/assets/img/ojo.avif);
+  background-size: cover;
+  background-position: center;
 }
+
+.hero-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url(/assets/img/ojo.avif) no-repeat center center / cover;
+  transform: scaleX(-1);
+  z-index: 0;
+}
+.hero-text h1,
+.hero-text p {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 
 
 .hero-text {
@@ -352,7 +369,7 @@ section ul li {
   overflow: hidden;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 570px) {
   .navegacion nav {
     display: flex;
     flex-direction: column;
@@ -362,7 +379,7 @@ section ul li {
     opacity: 0;
   }
 
-  .nav-toggle:checked + .nav-icon + .navegacion nav {
+  .nav-toggle:checked+.nav-icon+.navegacion nav {
     padding: 1rem;
     max-height: 500px;
     opacity: 1;
@@ -372,47 +389,16 @@ section ul li {
     display: flex;
   }
 
-  .logo{
+  .logo {
     display: none;
   }
-  .topbar{
+
+  .topbar {
     min-height: 8vh;
   }
 }
 
 
-.nosotros-section {
-  padding: 4rem 1.5rem;
-  max-width: 900px;
-  margin: 0 auto;
-  background-color: #f8f8f8;
-  border-radius: 20px;
-  animation: fadeIn 1s ease forwards;
-  opacity: 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-.nosotros-section h2 {
-  font-size: clamp(1.8rem, 5vw, 3rem);
-  margin-bottom: 0.5rem;
-  text-align: center;
-  color: #009E9B;
-}
-
-.nosotros-section .divider {
-  width: 60px;
-  height: 4px;
-  background-color: #00B89F;
-  margin: 0 auto 2rem auto;
-  border-radius: 2px;
-}
-
-.nosotros-section p {
-  font-size: clamp(1rem, 2.2vw, 1.2rem);
-  line-height: 1.6;
-  margin-bottom: 1.2rem;
-  text-align: justify;
-}
 
 @keyframes fadeIn {
   to {
@@ -460,3 +446,48 @@ section ul li {
     opacity: 1;
   }
 }
+
+.navegacion nav a {
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  font-weight: 500;
+  padding: clamp(0.4rem, 1vw, 0.6rem) clamp(0.8rem, 2vw, 1.2rem);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+
+.navegacion nav a:hover {
+  opacity: 0.8;
+}
+
+.logoInstagram i {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+
+@media (max-width: 460px) {
+  .navegacion nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+}
+
+.masInfo {
+  overflow: hidden;
+}
+
+@media (min-width: 1200px){
+  .masInfo{
+    display: flex;
+      gap: 1rem;
+      align-items: center;
+  }
+}
+
+@media (min-width: 1700px){
+  .nosotros{
+    max-width: 40rem;
+  }
+}
+
