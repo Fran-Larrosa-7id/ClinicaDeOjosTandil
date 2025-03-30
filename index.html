@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clínica de Ojos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background-color: #fff; color: #333; }
+
+    .topbar {
+      background-color: #009E9B;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .topbar .logo img { height: 40px; }
+    .topbar nav { display: flex; gap: 1.5rem; align-items: center; font-weight: 600; }
+    .topbar nav a { color: white; text-decoration: none; }
+    .topbar nav a:hover { opacity: 0.8; }
+    .topbar .contacto { display: flex; align-items: center; gap: 1rem; }
+    .topbar .contacto i { color: white; }
+
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('tu-imagen.jpg') no-repeat center center / cover;
+    }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      color: white;
+      max-width: 500px;
+    }
+    .hero-text h1 { font-size: 3rem; margin: 0; }
+    .hero-text p { font-size: 1.2rem; }
+    .hero-text a {
+      background-color: #00B89F;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-right: 1rem;
+      display: inline-block;
+    }
+    .hero-text a:last-child { background-color: #007BFF; }
+
+    .form-section {
+      background-color: #009E9B;
+      padding: 4rem 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    .form-container {
+      background: white;
+      border-radius: 25px;
+      padding: 3rem;
+      width: 100%;
+      max-width: 850px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .form-container h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    .form-container p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    form textarea { resize: vertical; height: 120px; }
+    .form-row { display: flex; gap: 1rem; }
+    .form-row input { flex: 1; }
+    .whatsapp-group {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .submit-btn {
+      background: #009E9B;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      font-weight: bold;
+      float: right;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+    .footer-section { flex: 1; min-width: 250px; }
+    .footer-section img { height: 50px; margin-bottom: 1rem; }
+    .footer-section h4 { margin-bottom: 1rem; }
+    .footer-section p, .footer-section a { color: white; text-decoration: none; font-size: 0.9rem; }
+    .footer-bottom {
+      background: #111;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="logo"><img src="logo.png" alt="Logo Clínica de Ojos" /></div>
+      <nav>
+        <a href="#home">HOME</a>
+        <a href="#cataratas">CATARATAS</a>
+        <a href="#retina">RETINA</a>
+        <a href="#especialidades">ESPECIALIDADES</a>
+        <a href="#contacto">MÁS</a>
+        <div class="contacto">
+          <i class="fas fa-phone"></i><span>2614497800</span>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </nav>
+    </div>
+    <div class="hero-text">
+      <h1>Tu visión<br>Nos importa</h1>
+      <p>A la vanguardia en oftalmología a nivel mundial.</p>
+      <a href="#">Turnos por WhatsApp</a>
+      <a href="#">Turnos online</a>
+    </div>
+  </header>
+
+  
+
+  <footer>
+    <div class="footer-section">
+      <img src="logo.png" alt="Logo" />
+      <p>Tu visión nos importa</p>
+      <p>Nos encontramos en permanente estado de actualización, tanto en infraestructura como del equipo médico, lo que nos permite estar a la vanguardia en Oftalmología a nivel mundial.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Más info</h4>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.8489973899323!2d-59.132027400000005!3d-37.3224044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95911f92165e4cfb%3A0xcb391a962f1071b0!2sCl%C3%ADnica%20de%20Ojos%20Tandil!5e0!3m2!1ses-419!2sar!4v1743170240135!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p><strong>DE LUNES A VIERNES</strong><br>08:00 a 19:00 Hs.<br><strong>SÁBADO</strong><br>09:00 a 13:00 Hs.</p>
+    </div>
+    <div class="footer-section">
+      <p> Av. Santamarina 760</p>
+      <p>+54 (0261) 4497800</p>
+      <p>contacto@clinicadeojos.com.ar</p>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    Powered by <a href="https://sieteideas.com.ar/" style="color: #009E9B;">7ID Software</a> &copy; 2025
+  </div>
+</body>
+</html>
