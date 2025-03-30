@@ -26,6 +26,9 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  position: fixed !important;
+  width: 100%;
+  top: 0;
 }
 
 .topbar .logo img {
