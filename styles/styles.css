@@ -364,9 +364,6 @@ section ul li {
     display: flex;
   }
 
-  .logo {
-    display: none;
-  }
 
   .topbar {
     min-height: 8vh;
@@ -695,4 +692,8 @@ section ul li {
 .logoAndTitle h3 {
   font-size: clamp(1.5rem, 5vw, 2rem);
   line-height: 1.2;
+}
+
+.topbar .logo {
+  width: 10%;
 }
