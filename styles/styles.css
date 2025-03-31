@@ -176,6 +176,7 @@ footer {
   color: white;
   text-decoration: none;
   font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .footer-bottom {
@@ -204,7 +205,7 @@ h6,
   position: relative;
   height: clamp(300px, 90vh, 700px);
   overflow: hidden;
-  background-image: url('../assets/img/ojo.avif');
+  background-image: url('../assets/img/eyeBg.avif');
   background-size: cover;
   background-position: center;
 }
@@ -213,9 +214,8 @@ h6,
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
-    url('../assets/img/ojo.avif') no-repeat center center / cover;
-  transform: scaleX(-1);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+    url('../assets/img/eyeBg.avif') no-repeat center center / cover;
   z-index: 0;
 }
 .hero-text h1,
@@ -376,6 +376,13 @@ section ul li {
     width: 10rem;
     margin: 0 auto;
   }
+  .buttons{
+    >a {
+      >button{
+        height: 47px;
+      }
+    }
+  }
 }
 
 
@@ -451,6 +458,27 @@ section ul li {
     align-items: center;
     gap: 0.75rem;
   }
+  
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .logoAndTitle h3 {
+    text-align: center;
+  }
+
+  .logoAndTitle{
+    align-items: center;
+  }
+
+  .hero-header::before {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url('../assets/img/eyeBg.avif') no-repeat center center / cover;
+
+  }
 }
 
 .masInfo {
@@ -472,7 +500,7 @@ section ul li {
 }
 
 .button {
-  font-size: clamp(0.5rem, 1.8vw, 0.9rem);
+  font-size: clamp(1rem, 1.8vw, 0.9rem);
   position: relative;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -614,6 +642,14 @@ section ul li {
   }
 }
 
+@media (max-width: 330px) {
+  .especialidad .texto {
+    min-width: unset;
+  }
+  
+}
+  
+
 .footer-bottom {
   background-color: #111;
   text-align: center;
@@ -629,4 +665,34 @@ section ul li {
 
 .footer-bottom a:hover {
   text-decoration: underline;
+}
+
+.horarios{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-bottom: 17px;
+}
+
+
+.logoAndTitle img {
+  width: clamp(263px, 19vw, 25rem);
+  height: auto;
+}
+
+.logoAndTitle{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.logoAndTitle{
+  >p{
+    margin: 1rem 0 1rem 0;
+  }
+}
+
+.logoAndTitle h3 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  line-height: 1.2;
 }
