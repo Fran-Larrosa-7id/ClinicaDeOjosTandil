@@ -202,9 +202,9 @@ h6,
 
 .hero-header {
   position: relative;
-  height: clamp(300px, 50vh, 700px);
+  height: clamp(300px, 90vh, 700px);
   overflow: hidden;
-  background-image: url(/assets/img/ojo.avif);
+  background-image: url('../assets/img/ojo.avif');
   background-size: cover;
   background-position: center;
 }
@@ -214,7 +214,7 @@ h6,
   position: absolute;
   inset: 0;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
-    url(/assets/img/ojo.avif) no-repeat center center / cover;
+    url('../assets/img/ojo.avif') no-repeat center center / cover;
   transform: scaleX(-1);
   z-index: 0;
 }
@@ -614,3 +614,19 @@ section ul li {
   }
 }
 
+.footer-bottom {
+  background-color: #111;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.footer-bottom a {
+  color: #00b89f;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
