@@ -1,13 +1,20 @@
-.contruccion{
-    height: 100vh !important;
-    width: 100vw !important;
-    background-color: red;
-    background-image: url('../assets/img/cot_construccion.avif');
-    background-size: cover;
-    background-position: center;
-    
-  }
 
-  body{
-    padding: 0;
+body {
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.contruccion {
+  height: 100vh !important;
+  width: 100vw !important;
+  >img{
+    width: 45vw;
+  };
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  >h1{
+    font-size: clamp(1.4rem, 2.5vw, 3rem);
   }
+}
