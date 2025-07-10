@@ -445,8 +445,8 @@ section ul li {
   opacity: 0.8;
 }
 
-.logoInstagram i {
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
+.logoInstagram img{
+  width: 30px;
 }
 
 @media (max-width: 460px) {
