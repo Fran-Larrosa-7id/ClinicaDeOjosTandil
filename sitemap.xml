@@ -6,4 +6,16 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://clinicadeojostandil.com.ar/#nosotros</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clinicadeojostandil.com.ar/#especialidades</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clinicadeojostandil.com.ar/#contacto</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
