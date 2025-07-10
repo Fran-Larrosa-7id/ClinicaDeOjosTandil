@@ -697,3 +697,7 @@ section ul li {
 .topbar .logo {
   width: 10%;
 }
+
+.section-card {
+  scroll-margin-top: 80px; /* o lo que mida tu header */
+}
