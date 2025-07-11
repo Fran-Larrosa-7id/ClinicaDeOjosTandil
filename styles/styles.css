@@ -407,7 +407,7 @@ section ul li {
   font-size: clamp(1.8rem, 5vw, 3rem);
   margin-bottom: 0.5rem;
   text-align: center;
-  color: #00B89F !important;
+  color: #007066 !important;
 }
 
 .section-card .divider {
@@ -598,8 +598,8 @@ section ul li {
 }
 
 .especialidad h3 {
-  font-size: clamp(1.3rem, 2vw, 2rem);
-  color: #009e9b;
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem); /* Mínimo ~24px */
+  color: #007066;
   margin-bottom: 0.5rem;
 }
 
@@ -700,4 +700,14 @@ section ul li {
 
 .section-card {
   scroll-margin-top: 80px; /* o lo que mida tu header */
+}
+
+.footer-bottom a {
+  color: #009E9B;
+  text-decoration: underline;
+}
+
+.footer-bottom a:hover {
+  text-decoration: none;
+  color: #007066;
 }
