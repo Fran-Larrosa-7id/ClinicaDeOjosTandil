@@ -1,3 +1,16 @@
 User-agent: *
 Allow: /
+
+# Archivos específicos
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Assets y recursos
+Allow: /assets/
+Allow: /styles/
+
+# Sitemap
 Sitemap: https://clinicadeojostandil.com.ar/sitemap.xml
+
+# Host (dominio preferido)
+Host: https://clinicadeojostandil.com.ar
