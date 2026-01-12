@@ -737,3 +737,11 @@ section ul li {
   text-decoration: none;
   color: #1f3054;
 }
+
+.footer-bottom .link7id {
+  color: white;
+}
+
+.footer-bottom .link7id:hover {
+  color: white;
+}
