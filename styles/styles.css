@@ -328,8 +328,16 @@ main {
 .contact,
 .email {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
+}
+
+.location img,
+.contact img,
+.email img {
+  flex-shrink: 15;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
 }
 
 section h2 {
@@ -339,7 +347,7 @@ section h2 {
 
 section p {
   font-size: clamp(1rem, 2.2vw, 1.2rem);
-  line-height: 1.6;
+  line-height: 1;
   margin-bottom: 1rem;
 }
 
@@ -682,9 +690,19 @@ section ul li {
   color: #ccc;
 }
 
-.footer-bottom a {
-  color: #1f3054;
+.footer-section a {
+  color: white;
   text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-section.nosotros p {
+  line-height: 2;
+}
+
+.horarios p {
+  line-height: 1.8;
 }
 
 .footer-bottom a:hover {
@@ -694,7 +712,7 @@ section ul li {
 .horarios {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 1rem;
   padding-bottom: 17px;
 }
 
