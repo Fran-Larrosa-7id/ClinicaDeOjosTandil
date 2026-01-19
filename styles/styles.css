@@ -207,7 +207,6 @@ footer {
 
 .footer-section img {
   height: 50px;
-  margin-bottom: 1rem;
 }
 
 .footer-section h4 {
@@ -329,16 +328,14 @@ main {
 .contact,
 .email {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
 }
 
 .location img,
 .contact img,
 .email img {
-  flex-shrink: 15;
-  margin-top: -1rem;
-  margin-bottom: 2rem;
+  /* flex-shrink: 15; */
 }
 
 section h2 {
@@ -775,5 +772,4 @@ section ul li {
 
 .nosotros {
   font-size: 40px !important;
-  text-align: center;
 }
