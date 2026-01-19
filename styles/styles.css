@@ -182,7 +182,7 @@ form textarea {
 }
 
 footer {
-  background-color: #222;
+  background-color: #1f3054;
   color: white;
   padding: 3rem 2rem;
   width: 100%;
@@ -257,7 +257,8 @@ h6,
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
     url("../assets/img/eyeBg.avif") no-repeat center center / cover;
   z-index: 0;
 }
@@ -378,11 +379,15 @@ section ul li {
   height: 3px;
   background-color: white;
   border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .navegacion nav {
-  transition: max-height 0.4s ease, opacity 0.3s ease;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease;
   overflow: hidden;
 }
 
@@ -508,7 +513,8 @@ section ul li {
   }
 
   .hero-header::before {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background:
+      linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url("../assets/img/eyeBg.avif") no-repeat center center / cover;
   }
 }
@@ -525,12 +531,6 @@ section ul li {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: start;
-  }
-}
-
-@media (min-width: 1700px) {
-  .nosotros {
-    max-width: 40rem;
   }
 }
 
@@ -762,4 +762,18 @@ section ul li {
 
 .footer-bottom .link7id:hover {
   color: white;
+}
+
+.logoFooter {
+  object-fit: cover;
+  height: 69px !important;
+}
+
+.podcast-section h2 {
+  font-size: 40px;
+}
+
+.nosotros {
+  font-size: 40px !important;
+  text-align: center;
 }
